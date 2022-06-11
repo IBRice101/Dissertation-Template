@@ -2,6 +2,10 @@
 
 This template is a basic outline of what one is expected to write in a dissertation for BSc. (Hons.) Ethical Hacking at Abertay University 
 
+**PLEASE NOTE**: Any content currently in the the template (i.e., bullet points) is there for guidance purposes only, please delete these when working on the dissertation yourself. 
+
+If you do not know much about LaTeX right now, don't worry! There are plenty of guides online, including [this excellent one from grad Mairi](https://supermairio.github.io/2020-06-09-latex-guide/). I also recommend rewriting a couple of your already written reports in LaTex just so you can get the hang of it before diving in with your dissertation.
+
 ## Submission Requirements
 
 - 10000 words (+/- 10%) excluding abstract, appendices and references, ie body of work
