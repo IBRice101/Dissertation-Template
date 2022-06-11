@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper]{article}
+    \usepackage[utf8]{inputenc} % ensure utf-8 is being used
+    \usepackage[margin=1in]{geometry} % as per the Abertay Style Guide (https://intranet.abertay.ac.uk/docurl/41474)
+    \usepackage{float} % ensuring pictures go where you want
+    \usepackage[british]{babel} % use British English
+    \usepackage[backend=bibtex,style=authoryear]{biblatex} % Referencing
+        \addbibresource{references}
+    \usepackage{graphicx} %set graphics library and directory to images/
+        \graphicspath{ {images/} }
+    \usepackage{setspace} % as per the Abertay Style Guide (https://intranet.abertay.ac.uk/docurl/41474)
+        \onehalfspacing
+    \usepackage{minted} % for code presentation (requires pygments package from pip)
+        \usemintedstyle{perldoc}
+    \usepackage{outlines} % for ordered list
+    \usepackage{titlesec} % for better headings
+        \setcounter{secnumdepth}{4} % set the depth to whatever you need, 4 is usually as high as I go
+        \titleformat{\paragraph}
+        {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+        \titlespacing*{\paragraph}
+        {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+    \usepackage{csquotes} % context sensitive quotes
+    \renewcommand\thesection{} % removes section numbering
+    \pagenumbering{roman} % begin with roman numbering
+
+\begin{document}
+    \begin{titlepage}
+      \centering
+		{\scshape\LARGE Abertay University \par} % replace with uni logo depending on style suggestion
+		\vspace{1cm}
+		{\scshape School of Design and Informatics \par}
+		\vspace{1.5cm}
+		{\Large\bfseries Your Title\par}
+		\vspace{4cm}
+		{\Large\itshape Your Name\par}
+		0000000 % Student Number
+		\\
+		\vfill
+		A dissertation submitted in partial satisfaction of the requirement for the degree Bachelor of Science (Hons.) in Ethical Hacking
+		\vfill
+		supervised by\par
+		(Dr.) Forename \textsc{Surname}
+		\vfill
+		{\large \today\par}  
+    \end{titlepage}
+
+    \include{0-Preamble.tex}
+        
+    \tableofcontents
+    \clearpage
+    \listoffigures
+    \clearpage
+    \pagenumbering{arabic} % switch to arabic (1, 2, 3...)
+
+    \include{1-Introduction.tex}
+    \include{2-LitReview.tex}
+    \include{3-Methodology.tex}
+    \include{4-Results.tex}
+    \include{5-Discussion.tex}
+    \include{6-ConclusionAndFutureWork.tex}
+
+    \section{References}
+        \printbibliography[heading=none]
+
+    \include{7-Appendices.tex}
+\end{document}
