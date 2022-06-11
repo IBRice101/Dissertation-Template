@@ -8,6 +8,7 @@
 *.bbl
 *.blg
 *.lof
+*.lot
 *.xml
 
 main-blx.bib

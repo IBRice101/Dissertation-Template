@@ -20,6 +20,8 @@
         {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
     \usepackage{csquotes} % context sensitive quotes
     \renewcommand\thesection{} % removes section numbering
+    \renewcommand\thesubsection{}
+    \renewcommand\thesubsubsection{}
     \pagenumbering{roman} % begin with roman numbering
 
 \begin{document}
@@ -48,6 +50,8 @@
     \tableofcontents
     \clearpage
     \listoffigures
+    \clearpage
+    \listoftables
     \clearpage
     \pagenumbering{arabic} % switch to arabic (1, 2, 3...)
 
