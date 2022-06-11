@@ -5,5 +5,10 @@
 *.pdf
 *.toc
 *.gz
+*.bbl
+*.blg
+*.lof
+*.xml
 
+main-blx.bib
 /_minted-main
